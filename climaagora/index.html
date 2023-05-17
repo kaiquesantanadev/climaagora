@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/nuvem.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Trabalho - Clima Agora</title>
+</head>
+<body>
+    <header>
+        <img src="img/sun.png" id="img-sol">
+    </header>
+    <div id="carrossel" style="margin-bottom: 50px;"></div>
+    <h1>CLIMA AGORA</h1>
+    <p>Digite a cidade para consultar o clima: 
+        <input type="text" name="city" id="city" placeholder="Ex: São Paulo..."> 
+        <button onclick="getWeather(document.getElementById('city').value)" id="btn"><img src="img/search.svg" width="20px"></button>
+    </p>
+    <div id="resultado" style="margin-top: 20px;"></div>
+        
+    </div>
+    
+
+    <footer>
+        <p style="font-size: 12px; margin-top: 10em;">&copy; Feito por: Gustavo Martins, João Vidal, João Augusto, Kaique Santana, Wellingthon Francisco.</p>
+    </footer>
+
+
+    <script src="weather.js"></script>
+</body>
+</html>

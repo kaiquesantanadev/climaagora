@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+body {
+    background-color: #138ebe;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body h1, p, #resultado, #carrossel {
+    text-align: center;
+    color: white;
+}
+
+
+button {
+    margin: auto;
+    margin-top: 20px;
+    height: 30px;
+    width: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgb(247, 250, 100);
+    font-weight: 700;
+}
+
+input {
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    height: 35px;
+    width: 50vh;
+    padding: 5px;
+}
+
+#img-sol {
+    width: 14%;
+    display: block;
+    margin-left: auto;
+    margin-bottom: 0;
+}
