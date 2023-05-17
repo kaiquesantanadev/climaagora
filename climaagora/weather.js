@@ -56,20 +56,20 @@ async function getWeather(city) {
 
 var cont = 0
 async function getCapitalWeather() {
-    const result = document.getElementById('resultado');
+    const carrossel = document.getElementById('carrossel');
 
     while(true) {
         await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${estados[cont].capital}&lang=pt_br&appid=d624370497d30ca21d54943f48656592&units=metric&lang=pt_br`)
         .then((response) => response.json())
         .then((data) => {
             console.log(data);
-            result.textContent = `Temperatura atual em ${data.name}: ${Math.round(data.main.temp)}ºC`;
+            carrossel.textContent = `Temperatura atual em ${data.name}: ${Math.round(data.main.temp)}ºC`;
                     
             if(cont == 26)
                 cont = 0
             else
                 cont++
-        }).catch((error) => result.textContent = 'Cidade não encontrada')
+        }).catch((error) => carrossel.textContent = 'Cidade não encontrada')
 
         await new Promise(res => setTimeout(res, 1000 * 5))
     }
